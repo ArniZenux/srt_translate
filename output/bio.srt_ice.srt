@@ -1,0 +1,75 @@
+1
+00: 00: 00,500 -> 00: 00: 04,620
+Verið velkomin í CTL SC1X Grundvallaratriði aðfangakeðju
+
+2
+00: 00: 04,620 -> 00: 00: 06,600
+Stjórnun og flutninga.
+
+3
+00: 00: 06.600 -> 00: 00: 08.540
+Í þessum fyrirlestri, allt sem ég vil gera
+
+4
+00: 00: 08,540 -> 00: 00: 12,130
+er að kynna hugtök um stjórnun og flutninga á framboðskeðju,
+
+5
+00: 00: 12,130 -> 00: 00: 14.840
+og settu sviðið það sem eftir er af námskeiðinu.
+
+6
+00: 00: 14.840 -> 00: 00: 16.770
+En fyrst skulum við tala um eitthvað framboð
+
+7
+00: 00: 16.770 -> 00: 00: 19.770
+Keðjur fyrir nokkrar mismunandi vörur.
+
+8
+00: 00: 19.770 -> 00: 00: 22.980
+Og svo það sem ég er að sýna hér eru fjórar mjög mismunandi vörur
+
+9
+00: 00: 22.980 -> 00: 00: 25.770
+að þú myndir halda að hafa mjög mismunandi birgðakeðjur.
+
+10
+00: 00: 25.770 -> 00: 00: 26.920
+Og þú myndir hafa rétt fyrir þér.
+
+11
+00: 00: 26.920 -> 00: 00: 29.570
+Efst til vinstri höfum við banana að vera
+
+12
+00: 00: 29.570 -> 00: 00: 31.870
+Selt í bandarískri matvöruverslun.
+
+13
+00: 00: 31.870 -> 00: 00: 35.350
+Hægra megin erum við með samþætta íkveikjusamsetningu.
+
+14
+00: 00: 35.350 -> 00: 00: 38.800
+Neðst til hægri erum við með dælur kvenna.
+
+15
+00: 00: 38.800 -> 00: 00: 40,510
+Neðst til vinstri höfum við fullt
+
+16
+00: 00: 40,510 -> 00: 00: 43,290
+af pokum af sementi- af steypu.
+
+17
+00: 00: 43,290 -> 00: 00: 46,250
+Svo ef þú horfir á þetta myndirðu hugsa, vá!
+
+18
+00: 00: 46.250 -> 00: 00: 49,269
+Það er ekkert sem gæti verið svipað í þessum birgðakeðjum.
+
+19
+00: 00: 49,269 -> 00: 00: 51,560
+Og það áhugaverða við stjórnun aðfangakeðju

@@ -1,0 +1,78 @@
+0
+00:00:00,000 --> 00:00:00,500
+
+1
+00:00:00,500 --> 00:00:04,620
+Welcome to CTL SC1x Fundamentals of Supply Chain
+
+2
+00:00:04,620 --> 00:00:06,600
+Management and Logistics.
+
+3
+00:00:06,600 --> 00:00:08,540
+In this lecture, all I want to do
+
+4
+00:00:08,540 --> 00:00:12,130
+is introduce concepts of Supply Chain Management and Logistics,
+
+5
+00:00:12,130 --> 00:00:14,840
+and set the stage for the remainder of the course.
+
+6
+00:00:14,840 --> 00:00:16,770
+But first, let's talk about some supply
+
+7
+00:00:16,770 --> 00:00:19,770
+chains for a few different products.
+
+8
+00:00:19,770 --> 00:00:22,980
+And so what I'm showing here are four very different products
+
+9
+00:00:22,980 --> 00:00:25,770
+that you would think have very different supply chains.
+
+10
+00:00:25,770 --> 00:00:26,920
+And you'd be right.
+
+11
+00:00:26,920 --> 00:00:29,570
+In the top left, we have bananas being
+
+12
+00:00:29,570 --> 00:00:31,870
+sold in a U.S. grocery store.
+
+13
+00:00:31,870 --> 00:00:35,350
+On the right, we have an integrated ignition assembly.
+
+14
+00:00:35,350 --> 00:00:38,800
+On the bottom right, we have women's pumps.
+
+15
+00:00:38,800 --> 00:00:40,510
+On the bottom left, we have a bunch
+
+16
+00:00:40,510 --> 00:00:43,290
+of bags of cement-- of concrete.
+
+17
+00:00:43,290 --> 00:00:46,250
+So if you look at these, you'd think, wow!
+
+18
+00:00:46,250 --> 00:00:49,269
+There's nothing that could be similar in these supply chains.
+
+19
+00:00:49,269 --> 00:00:51,560
+And the interesting thing about supply chain management
