@@ -1,3 +1,6 @@
+// Version 0.1
+// Author: Arni Ingi Johannesson
+
 const fs = require('fs');
 const path = require('path');
 const translate = require('@vitalets/google-translate-api');
@@ -13,7 +16,7 @@ const filterFileExtension = '.srt';
 const dir_input = path.join(__dirname, input);
 const dir_output = path.join(__dirname, output);
 
-function checkInput(){
+function checkInput() {
   if(fs.existsSync(dir_input)) {
     return true; 
   } else { 
@@ -23,7 +26,7 @@ function checkInput(){
   }
 }
 
-function checkOutput(){
+function checkOutput() {
   if(fs.existsSync(dir_output)) {
     return true; 
   } else { 
@@ -49,7 +52,7 @@ function readFolder(){
   }
 }
 
-function readFile(zfile_srt){
+function readFile(zfile_srt) {
   let newFile = { name : file_srt, parts: [] }
   let newLine = {};
   
@@ -73,16 +76,32 @@ function readFile(zfile_srt){
   readOnlyTextLine(newFile); 
 }
 
-async function thyda(contents, _newfile, makeNewSrt){
+async function thyda(contents, _newfile, makeNewSrt) {
+  let teljari = 0; 
+  let tyding_setning = ''; 
+  let newcontents = '';
+  
+  let res = await translate(contents, {from: 'en', to: 'is'});
+  tyding_setning += res.text; 
+     
+  tyding_setning.split(/\r?\n/).forEach(line => {
+    teljari++;
+    _newfile.parts[teljari].sentences = `${line}`;  //replace. 
+  });
 
-  let newcontents = ''; 
-  let res = await translate( contents, {from: 'en', to: 'is'});
-  newcontents += res.text; 
-
+  _newfile.parts.forEach(line => {
+    if(line.sentences !== undefined && line.sentences.length > 0) {
+      newcontents += line.num + '\r\n';
+      newcontents += line.time + '\r\n';
+      newcontents += line.sentences + '\r\n';
+      newcontents += '\r\n';
+    }
+  });
+  
   fs.appendFileSync(makeNewSrt, newcontents);
 }
 
-function readOnlyTextLine(_newfile){
+function readOnlyTextLine(_newfile) {
   let contents = '';
 
   let makeNewSrt = path.join(__dirname, output_ +  file_srt + '_ice.srt');
@@ -91,10 +110,8 @@ function readOnlyTextLine(_newfile){
     fs.unlinkSync(makeNewSrt);
     _newfile.parts.forEach(item => {
     if(item.sentences !== undefined && item.sentences.length > 0) {
-      contents += item.num + '\r\n'; 
-      contents += item.time + '\n'; 
       contents += item.sentences.join('\r\n'); 
-      contents += '\r\n\r\n';
+      contents += '\r\n';
     }
    })
 
@@ -103,10 +120,8 @@ function readOnlyTextLine(_newfile){
   } else {
     _newfile.parts.forEach(item => {
       if(item.sentences !== undefined && item.sentences.length > 0) {
-        contents += item.num + '\r\n'; 
-        contents += item.time + '\n'; 
         contents += item.sentences.join('\r\n'); 
-        contents += '\r\n\r\n';
+        contents += '\r\n';
       }
     })
 
@@ -115,12 +130,12 @@ function readOnlyTextLine(_newfile){
   }
 }
 
-function main(){
+function main() {
   if( checkInput() ){
     readFolder(); 
   } 
   
-  if(checkOutput() ){
+  if(checkOutput() ) {
     if( file_srt.length > 0 ){
       readsrt = path.join(__dirname,  input_ + file_srt);
       readFile(readsrt); 
