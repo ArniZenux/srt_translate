@@ -83,8 +83,10 @@ async function thyda(contents, _newfile, makeNewSrt) {
   
   let res = await translate(contents, {from: 'en', to: 'is'});
   tyding_setning += res.text; 
-     
-  tyding_setning.split(/\r?\n/).forEach(line => {
+    
+  console.log(tyding_setning); 
+  console.log(makeNewSrt); 
+  /*tyding_setning.split(/\r?\n/).forEach(line => {
     teljari++;
     _newfile.parts[teljari].sentences = `${line}`;  //replace. 
   });
@@ -99,6 +101,7 @@ async function thyda(contents, _newfile, makeNewSrt) {
   });
   
   fs.appendFileSync(makeNewSrt, newcontents);
+  */
 }
 
 function readOnlyTextLine(_newfile) {
