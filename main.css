@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    width: 100%;
+    background-color: #fff;
+}
+
+header h1{
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+header h2{
+    margin: 0 auto;
+    padding: 0px;    
+    max-width: 1000px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main{
+    padding: 5px;
+    margin: 9rem auto 0;
+    max-width: 1000px;
+}
+
+main > p {
+    font-size: 1.2rem;
+}
+
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

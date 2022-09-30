@@ -16,6 +16,8 @@ const filterFileExtension = '.srt';
 const dir_input = path.join(__dirname, input);
 const dir_output = path.join(__dirname, output);
 
+
+
 function checkInput() {
   if(fs.existsSync(dir_input)) {
     return true; 
